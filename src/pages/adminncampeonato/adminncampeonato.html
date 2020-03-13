@@ -1,0 +1,29 @@
+<!--
+  Generated template for the AdminncampeonatoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Campeonato</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item (click)="OpenCampeonatodetalhes()"> 
+          <ion-avatar item-start>
+            <img src="../../assets/imgs/FourG.png">
+          </ion-avatar>
+          <h2>Liga FourG</h2>
+          <p>The Bests Desenvolvedores Ionic...</p>
+        </ion-item>    
+      </ion-list>
+    <ion-fab bottom right>
+    <button ion-fab (click)="openCriarCampeonato()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

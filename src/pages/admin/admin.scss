@@ -1,0 +1,33 @@
+page-admin {
+
+}
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+      height: 250px;
+    }
+        
+    .card-title {
+      background-color: rgba(0,0,0,0.7);
+      position: absolute;
+      top: 0%;  
+      width: 100%;  
+    }
+    .card-title h2 {
+        padding-top:45%; 
+        font-size: 2.0em;
+        font-weight: bold;
+        color: #fff;
+    }
+  
+ 
+    .card-title p{
+        font-size: 1.0em;
+        color: #fff;
+        padding-bottom:42%
+    }
+  
+  }

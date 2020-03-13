@@ -1,0 +1,75 @@
+<!--
+  Generated template for the CriartimePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Criar Time</ion-title>
+    <ion-buttons end>
+    <button ion-button style="float:right" type="submit" [disabled]="!form.valid" (click)="onSubmit()">
+        <ion-icon name="checkmark" style="font-size:25px"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form [formGroup]="form">
+  <ion-list>
+ <!--   <button ion-button full clear color="primary">
+      <ion-icon name="add" style="font-size:20px"></ion-icon>      
+      &nbsp; Adicione a Foto &nbsp;
+     <ion-icon name="camera" style="font-size:20px"></ion-icon>
+    </button> -->
+
+      <ion-item>
+          <ion-label stacked color="primary"> Nome </ion-label>
+          <ion-input type="text" formControlName="nome"></ion-input>
+        </ion-item>
+
+      <ion-item>
+            <ion-label stacked color="primary">Descrição</ion-label>
+            <ion-textarea type="text" formControlName="descricao"></ion-textarea>
+      </ion-item>  
+
+      <br>
+      <h2 text-center> Jogadores </h2>
+      <br>
+  <ion-list-header color="primary" text-center>
+    Goleiro
+  </ion-list-header>
+  <ion-item> <ion-input formControlName="goltit" type="text" placeholder="Titular"> </ion-input> </ion-item>
+  <ion-item> <ion-input formControlName="golres" type="text" placeholder="Reserva"> </ion-input> </ion-item>
+
+  <ion-list-header color="primary" text-center>
+      Fixo
+  </ion-list-header>
+    <ion-item> <ion-input formControlName="fixotit" type="text" placeholder="Titular"> </ion-input> </ion-item>
+    <ion-item> <ion-input formControlName="fixores" type="text" placeholder="Reserva"> </ion-input> </ion-item>
+
+  <ion-list-header color="primary" text-center>
+        Ala Esquerda
+  </ion-list-header>
+      <ion-item> <ion-input formControlName="alaetit" type="text" placeholder="Titular"> </ion-input> </ion-item>
+      <ion-item> <ion-input formControlName="alaeres" type="text" placeholder="Reserva"> </ion-input> </ion-item>
+
+  <ion-list-header color="primary" text-center>
+          Ala Direita
+  </ion-list-header>
+        <ion-item> <ion-input formControlName="aladtit" type="text" placeholder="Titular"> </ion-input> </ion-item>
+        <ion-item> <ion-input formControlName="aladres" type="text" placeholder="Reserva"> </ion-input> </ion-item>  
+        
+  <ion-list-header color="primary" text-center>
+            Pivô
+  </ion-list-header>
+          <ion-item> <ion-input formControlName="pivotit" type="text" placeholder="Titular"> </ion-input> </ion-item>
+          <ion-item> <ion-input formControlName="pivores" type="text" placeholder="Reserva"> </ion-input> </ion-item>        
+</ion-list>
+  </form>
+</ion-content>

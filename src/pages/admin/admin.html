@@ -1,0 +1,64 @@
+<!--
+  Generated template for the AdminPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Admin</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="card-background-page">
+
+  <ion-card style="background-image: url(../../assets/imgs/FourG.png);background-size:cover" disabled="true">
+    <div class="card-title"> 
+      <h2><ion-icon name="trophy"></ion-icon> Campeonatos </h2> 
+      <p> Em breve </p>
+    </div>
+  </ion-card>
+
+<br/>
+
+  <ion-card style="background-image: url(../../assets/imgs/FourG.png);background-size:cover" (click)="OpenListartimes()">
+    <div class="card-title"> 
+        <h2><ion-icon name="shirt"></ion-icon> Times </h2> 
+        <p> Etec ABS </p>
+      </div>
+  </ion-card>
+  
+  <br/>
+
+  <ion-card style="background-image: url(../../assets/imgs/FourG.png);background-size:cover" (click)="OpenListarNoticias()">
+    <div class="card-title"> 
+        <h2><ion-icon name="paper"></ion-icon> Noticias </h2> 
+        <p> Etec ABS </p>
+      </div>
+  </ion-card>
+
+  <br/>
+
+
+  <ion-card style="background-image: url(../../assets/imgs/FourG.png);background-size:cover" (click)="OpenListarJogos()">    <div class="card-title"> 
+        <h2><ion-icon name="podium"></ion-icon> Jogos </h2> 
+        <p> Etec ABS </p>
+      </div>
+  </ion-card>
+
+  <br/>
+
+  <ion-card style="background-image: url(../../assets/imgs/FourG.png);background-size:cover" (click)="OpenEstatisticas()">
+    <div class="card-title"> 
+        <h2><ion-icon name="analytics"></ion-icon> Resultados </h2> 
+        <p> Etec ABS </p>
+      </div>
+  </ion-card>
+
+</ion-content>

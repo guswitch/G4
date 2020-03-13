@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+   <!-- <ion-buttons end>
+        <button ion-button style="float:right" (click)="gotoBuscar()">
+            <ion-icon name="search" style="font-size:25px"></ion-icon>
+          </button>
+        </ion-buttons> -->
+  </ion-navbar>
+
+ <!-- <button ion-fab style="position:fixed;margin-left:80%;margin-top: 130%" (click)="goUp()"> 
+      <ion-icon name="arrow-dropup"></ion-icon> 
+   </button> -->
+
+  
+</ion-header>
+
+<ion-content padding class="card-background-page">
+
+    <ion-card style="background-image: url(../../assets/imgs/FourG.png);background-size:cover"
+     *ngFor="let Times of Times | async" (click)="OpenTimedetalhes(Times.key, Times.nome, Times.descricao, 
+     Times.goltit ,Times.golres, Times.fixotit, Times.fixores, Times.aladtit, Times.aladres,
+     Times.alaetit, Times.aleres, Times.pivotit, Times.pivores)">
+      <div class="card-title"> 
+        <h2> {{ Times.nome }}</h2> 
+        <p> {{ Times.descricao }}</p>
+      </div>
+
+    </ion-card>
+  
+</ion-content>

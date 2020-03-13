@@ -1,0 +1,51 @@
+<!--
+  Generated template for the CriarcampeonatoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Criar Campeonato</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+
+  <ion-item>
+    <ion-label floating color="primary"> Titulo </ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label floating color="primary">Descrição</ion-label>
+  <ion-textarea></ion-textarea>
+  </ion-item>
+
+</ion-list>
+
+<h2 text-center> Times Participantes </h2>
+
+<br>
+
+<ion-list>
+
+  <ion-item *ngFor="let Times of Times | async">
+      
+    <ion-label>{{ Times.nome }}</ion-label>
+    <ion-checkbox></ion-checkbox>
+    <ion-thumbnail item-start>
+        <img src="../../assets/imgs/FourG.png">
+      </ion-thumbnail>
+  </ion-item>
+
+</ion-list>
+
+  <button ion-button clear (click)="goToGerarconfrontos()" style="float: right"> Proximo  &nbsp; <ion-icon name="arrow-forward"></ion-icon></button>
+
+</ion-content>

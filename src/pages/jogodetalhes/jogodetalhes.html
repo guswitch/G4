@@ -1,0 +1,69 @@
+<!--
+  Generated template for the JogodetalhesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Jogo Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="item-profile">
+   <ion-grid>
+        <ion-row>
+          <ion-col>
+              <img src="../../assets/imgs/no-photo.png" style="height: 120%;width: 100%;"/>
+          </ion-col>
+          <ion-col>
+              <img src="../../assets/imgs/no-photo.png" style="height: 120%;width: 100%;"/>
+          </ion-col>
+        </ion-row>
+    </ion-grid> 
+</div>
+<div class="item=detail">
+  <br>
+  <h2 text-center>{{ time1 }} {{ gols1 }} X {{ gols2 }} {{ time2 }}</h2>
+  <br>
+  <ion-item>
+    <ion-icon name="calendar" item-start></ion-icon>
+    Data:
+    <ion-badge item-end>{{ data | date: 'dd/MM/yyyy' }}</ion-badge>
+  </ion-item>
+
+  <ion-item>
+      <ion-icon name="time" item-start></ion-icon>
+      Hora:
+      <ion-badge item-end font-size:12px>18 : 00</ion-badge>
+    </ion-item>
+
+  <ion-item>
+    <ion-icon name="pin" item-start></ion-icon>
+    Local:
+    <ion-badge item-end font-size:12px>ETEC - ABS</ion-badge>
+  </ion-item>
+
+  <ion-card text-center color="primary" *ngIf="gols1 != '' && gols2 != ''">
+    <br>
+  <ion-icon name="trophy" color="secondary" style="font-size: 35px"></ion-icon> <br> <br>
+ <b  style="font-size: 20px" *ngIf="gols1 > gols2 || gols2 > gols1">Vencedor:</b> <label *ngIf="gols1 > gols2"  style="font-size: 23px"> {{ time1 }} </label> <label  style="font-size: 20px" *ngIf="gols2 > gols1"> {{ time2 }}</label> <label  style="font-size: 20px" *ngIf="gols2 === gols1"> Empate </label> 
+  <p text-right style="font-size:10px;margin-right: 10px;"> A diretoria.</p>
+  <br>
+</ion-card>
+
+  <ion-card text-center color="danger" *ngIf="gols1 == '' && gols2 == ''">
+      <br>
+    <ion-icon name="warning" color="secondary" style="font-size: 35px"></ion-icon> <br> <br>
+   <b> Só será permitida a entrada de alunos da Escola, no amistoso. <br>
+    Quaisquer outras pessoas não entrarão! Evite Constrangimentos. <br> <br> </b> 
+    <p text-right style="font-size:10px;margin-right: 10px;"> A diretoria.</p>
+    <br>
+  </ion-card>
+
+</div>
+</ion-content>

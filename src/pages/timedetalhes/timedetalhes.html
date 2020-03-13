@@ -1,0 +1,94 @@
+<!--
+  Generated template for the TimedetalhesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Time Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="item-profile" text-center style="background-image:url('../../assets/imgs/no-photo.png')">
+  </div>
+  <br>
+  <div class="item-detail">
+    <h2>{{ nome }}</h2>
+    <p>{{ descricao }}</p>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--<p text-center style="color:grey"> Dados dinamicos ainda não disponiveis </p>
+ <div id="container" style="display: block;"	></div> 
+<br>
+<br> -->
+
+<h2 text-center> Jogadores Titulares </h2>
+<br>
+<ion-list>
+  <ion-item>
+    <h2>{{ goltit }}</h2>
+    <p>Goleiro</p>
+    <button ion-button clear item-end (click)="OpenGoleirodetalhes(goltit)">Ver</button>
+  </ion-item>
+
+  <ion-item>
+    <h2>{{ fixotit }}</h2>
+    <p>Fixo</p>
+    <button ion-button clear item-end (click)="OpenFixodetalhes(fixotit)">Ver</button>
+  </ion-item>
+
+  <ion-item>
+    <h2>{{ aladtit }}</h2>
+    <p>Ala Direita</p>
+    <button ion-button clear item-end (click)="OpenAlaDdetalhes(aladtit)">Ver</button>
+  </ion-item>
+
+  <ion-item>
+    <h2>{{ alaetit }}</h2>
+    <p>Ala Esquerda</p>
+    <button ion-button clear item-end (click)="OpenAlaEdetalhes(fixotit)">Ver</button>
+  </ion-item>
+
+  <ion-item>
+      <h2>{{ pivotit }}</h2>
+      <p>Pivô</p>
+      <button ion-button clear item-end (click)="OpenPivodetalhes(fixotit)">Ver</button>
+    </ion-item>
+</ion-list>
+
+<br>
+<br>
+<br>
+
+<!-- <h2 text-center> Proximos Jogos </h2>
+<ion-grid>
+  <ion-item *ngFor="let Jogos of Jogos | async">
+      <ion-row>
+          <ion-col text-center> 
+            <img src="../../assets/imgs/no-photo.png" style="width: 100px;height: 100px;">
+            {{Jogos.time1}}
+          </ion-col>
+          <ion-col text-center style="padding-top: 20%"> X </ion-col>
+          <ion-col text-center>
+            <img src="../../assets/imgs/no-photo.png" style="width: 100px;height: 100px;">
+            {{Jogos.time2}}
+          </ion-col>
+        </ion-row>
+  </ion-item> 
+</ion-grid> -->
+
+</ion-content>
